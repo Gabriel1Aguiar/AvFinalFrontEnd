@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="CSS/Style.css" rel="stylesheet" />
+  <title>Admin</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div id="corposite">
+    <header>
+      <div class="logo">
+        <img class="barco" src="imagens/barco1.png" />
+        <div class="txtop">
+          <h1>Luxo</h1>
+          <h2>Aluguel de iates</h2>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a class="menu" href="Projeto iate.html">PÁGINA INICIAL</a></li>
+          <li class="barra"> | </li>
+          <li><a class="menu" href="Aluguel.html">ALUGUEL DE IATES</a></li>
+          <li class="barra"> | </li>
+          <li><a class="menu" href="Destinos.html">DESTINOS</a></li>
+          <li class="barra"> | </li>
+          <li><a class="menu" href="admin.html">ADMIN</a></li>
+          <li class="barra"> | </li>
+          <li><a class="menu" href="Contato.html">CONTATO</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h3>Login de Administrador</h3>
+      <form id="formulario-admin" onsubmit="realizarLogin(); return false;">
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
+        <div>
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" required>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="jquery-3.6.4.min.js"></script>
+  <script src="funcoes.js"></script>
+  
+</body>
+
+</html>
